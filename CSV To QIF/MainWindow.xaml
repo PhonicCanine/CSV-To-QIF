@@ -1,0 +1,20 @@
+﻿<Window x:Class="CSV_To_QIF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSV_To_QIF"
+        mc:Ignorable="d"
+        Title="CSV To QIF" Height="176.753" Width="365.269">
+    <Grid>
+        <Button Content="Open CSV" Margin="10,43,9.667,0" VerticalAlignment="Top" Click="openFile"/>
+        <Label x:Name="FileName" Content="File name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox x:Name="InDate" HorizontalAlignment="Left" Height="21" Margin="10,67,0,0" TextWrapping="Wrap" Text="d/MM/yyyy" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Incoming Date Format" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="OutDate" HorizontalAlignment="Left" Height="21" Margin="220,65,0,0" TextWrapping="Wrap" Text="MM/dd" VerticalAlignment="Top" Width="53"/>
+        <Label Content="Outgoing Date Format" HorizontalAlignment="Left" Margin="220,86,0,0" VerticalAlignment="Top"/>
+        <Button Content="Save QIF" Margin="0,0,9.667,9.333" HorizontalAlignment="Right" Width="151" Height="21" VerticalAlignment="Bottom" Click="SaveFile"/>
+        <Label Content="'yyyy" HorizontalAlignment="Left" Margin="273,63,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
